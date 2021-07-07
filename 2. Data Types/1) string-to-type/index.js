@@ -1,16 +1,19 @@
 function stringToType(str) {
     if (str === 'true'){
-        alert('Boolean');
+        return  true;
     } else if(str === 'false'){
-        alert('true');
+        return false;
     } else if(str === 'null'){
-        alert(null);
+        return null;
     } else if(str === 'undefined'){
-        alert(undefined);
+        return undefined;
+    } else if (isNaN(str) === false && str !== ''){
+        return Number(str);
+    } else if (str === ""){
+      return '';
     } else {
-        alert(str)
+        return String(str);
     }
-    return str;
 };
 
 window.stringToType = stringToType;
