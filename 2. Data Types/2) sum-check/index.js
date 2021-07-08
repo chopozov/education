@@ -6,7 +6,7 @@ function sumCheck(a, b) {
       throw new Error('Wrong arguments type!');
   } catch (error) {
       throw new Error(error);
-  }
+    }
 }
 
 window.sumCheck = sumCheck;
