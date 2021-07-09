@@ -8,7 +8,7 @@ function arraysSort(arr) {
             return 0;
         }
     } );
-    return arr;
+    return [...arr];
 };
 const arrayMax = (arr) => {
     let max = arr[0];
