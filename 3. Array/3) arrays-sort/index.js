@@ -16,7 +16,8 @@ const arrayMax = (arr) => {
         if (arr[i] > max) {
             max = arr[i];
         }
-    } return max;
+    }
+    return max;
 }
 window.arraysSort = arraysSort;
 
