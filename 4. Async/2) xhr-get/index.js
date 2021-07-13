@@ -5,8 +5,7 @@ function xhrGet(url) {
     xhr.send();
 
     return new Promise(function (resolve, reject) {
-        if (xhr.status <= 300 && xhr.status >= 200) {
-
+        if (xhr.status < 300 && xhr.status >= 200) {
             resolve(JSON.parse(xhr.response));
         } else {
             reject(JSON.parse(xhr.response))
